@@ -1,0 +1,24 @@
+Consider the following class:
+
+public class IdentifyMyParts {
+    public static int x = 7; 
+    public int y = 3; 
+}
+What are the class variables? -> X 
+
+What are the instance variables? -> Y
+
+What is the output from the following code:
+
+IdentifyMyParts a = new IdentifyMyParts();
+IdentifyMyParts b = new IdentifyMyParts();
+a.y = 5; //Put 5 on a.y 
+b.y = 6; //put 6 on b.y
+a.x = 1; //static - same for both set to 1 
+b.x = 2; // Set to 2 for both classes
+System.out.println("a.y = " + a.y); //a.y = 5
+System.out.println("b.y = " + b.y); //b.y = 6
+System.out.println("a.x = " + a.x); //a.x = 2
+System.out.println("b.x = " + b.x); //b.x = 2 
+System.out.println("IdentifyMyParts.x = " + IdentifyMyParts.x);	//idmyp = 2
+
