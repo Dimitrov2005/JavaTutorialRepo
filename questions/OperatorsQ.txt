@@ -1,0 +1,19 @@
+Questions
+Consider the following code snippet.
+arrayOfInts[j] > arrayOfInts[j+1]
+Which operators does the code contain? :  >, +
+
+Consider the following code snippet.
+int i = 10;
+int n = i++%5;
+What are the values of i and n after the code is executed? i=11, n = 0,
+What are the final values of i and n if instead of using the postfix increment operator (i++), you use the prefix version (++i))? i=11, n=1
+
+To invert the value of a boolean, which operator would you use? !
+
+Which operator is used to compare two values, = or == ? ==
+
+Explain the following code sample: result = someCondition ? value1 : value2; if result true val1 else val2
+
+In the following program, explain why the value "6" is printed twice in a row: 
+Because ++i will first do i+=1, then get the value and i++ will first get the value of i and then do the assignment 
