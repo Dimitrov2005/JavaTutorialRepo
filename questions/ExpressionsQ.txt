@@ -1,0 +1,15 @@
+Operators may be used in building expressions, which compute values.
+Expressions are the core components of statements.
+Statements may be grouped into blocks.
+The following code snippet is an example of a ambigious expression.
+ 1 * 2 * 3
+
+Statements are roughly equivalent to sentences in natural languages, but instead of ending with a period, a statement ends with a semicolumn.
+A block is a group of zero or more statements between balanced parenthessis{} and can be used anywhere a single statement is allowed.
+
+Identify the following kinds of expression statements:
+
+aValue = 8933.234; value assignment statement
+aValue++; value increment statement
+System.out.println("Hello World!"); method invocation statement 
+Bicycle myBike = new Bicycle(); object creation statement
