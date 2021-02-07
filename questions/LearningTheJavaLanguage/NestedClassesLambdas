@@ -1,0 +1,19 @@
+1. The program does not compile because an access to non-static final instance variables is
+not prohibited from a static nested class. Need to make the field static final
+
+2. Use the Java API documentation for the Box class (in the javax.swing package) to help you answer the following questions.
+What static nested class does Box define?
+    	Box.Filler
+What inner class does Box define?
+        Box.AccessibleBox
+What is the superclass of Box's inner class?
+    Container.AccessibleAWTContainer
+Which of Box's nested classes can you use from any class?
+	Box.Filler -> not protected, also static
+How do you create an instance of Box's Filler class?
+    Box.Filler bf = new Box.Filler();
+
+
+Get the file Class1.java. Compile and run Class1. What is the output?
+InnerClass1: getString invoked.
+InnerClass1: getAnotherString invoked.

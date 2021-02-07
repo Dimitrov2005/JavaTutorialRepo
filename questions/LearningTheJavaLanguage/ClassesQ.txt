@@ -1,0 +1,50 @@
+Consider the following class:
+
+public class IdentifyMyParts {
+    public static int x = 7; 
+    public int y = 3; 
+}
+What are the class variables? -> X 
+
+What are the instance variables? -> Y
+
+What is the output from the following code:
+
+IdentifyMyParts a = new IdentifyMyParts();
+IdentifyMyParts b = new IdentifyMyParts();
+a.y = 5; //Put 5 on a.y 
+b.y = 6; //put 6 on b.y
+a.x = 1; //static - same for both set to 1 
+b.x = 2; // Set to 2 for both classes
+System.out.println("a.y = " + a.y); //a.y = 5
+System.out.println("b.y = " + b.y); //b.y = 6
+System.out.println("a.x = " + a.x); //a.x = 2
+System.out.println("b.x = " + b.x); //b.x = 2 
+System.out.println("IdentifyMyParts.x = " + IdentifyMyParts.x);	//idmyp = 2
+
+
+What's wrong with the following program?
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        Rectangle myRect; // -> Here the object is not created, it is just a reference
+        myRect = new Rectangle();//FIX - Exercise 1
+        myRect.width = 40; // -> This will throw a NOE
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+
+The following code creates one array and one string object.
+How many references to those objects exist after the code executes?
+Is either object eligible for garbage collection?
+
+String[] students = new String[10];
+String studentName = "Peter Parker";
+students[0] = studentName;  //Reference pointing to student name
+studentName = null; //student name also points to same place, setting to null will set also the other one
+
+2 references exist - one from array, one from object, pointing to same place. Not eligible for GC,
+because only one reference points to null.
+
+How does a program destroy an object that it creates?
+The GC destroys the object and frees the memory when there are no references pointing to it
