@@ -1,5 +1,5 @@
-package com.Classes.playingCards.api;
-import com.Classes.playingCards.impl.Card;
+package com.learningJavaLanguage.Classes.playingCards.api;
+import com.learningJavaLanguage.Classes.playingCards.impl.Card;
 
 public interface BasicDeck {
     /**

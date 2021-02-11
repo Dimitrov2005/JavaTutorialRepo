@@ -1,4 +1,4 @@
-package com.Classes.playingCards.api;
+package com.learningJavaLanguage.Classes.playingCards.api;
 
 public interface BasicCard {
     /**

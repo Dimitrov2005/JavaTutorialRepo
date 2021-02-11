@@ -1,5 +1,6 @@
-package com.Classes.playingCards.impl;
-import com.Classes.playingCards.api.BasicCard;
+package com.learningJavaLanguage.Classes.playingCards.impl;
+
+import com.learningJavaLanguage.Classes.playingCards.api.BasicCard;
 
 public class Card implements BasicCard {
     private String rank;

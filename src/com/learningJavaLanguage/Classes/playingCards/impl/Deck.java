@@ -1,6 +1,6 @@
-package com.Classes.playingCards.impl;
+package com.learningJavaLanguage.Classes.playingCards.impl;
 
-import com.Classes.playingCards.api.BasicDeck;
+import com.learningJavaLanguage.Classes.playingCards.api.*;
 
 public class Deck implements BasicDeck {
 
