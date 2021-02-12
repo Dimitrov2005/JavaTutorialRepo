@@ -1,0 +1,35 @@
+1. Consider the following two classes:
+
+public class ClassA {
+    public void methodOne(int i) {
+    }
+    public void methodTwo(int i) {
+    }
+    public static void methodThree(int i) {
+    }
+    public static void methodFour(int i) {
+    }
+}
+
+public class ClassB extends ClassA {
+    public static void methodOne(int i) {
+    }
+    public void methodTwo(int i) {
+    }
+    public void methodThree(int i) {
+    }
+    public static void methodFour(int i) {
+    }
+}
+a. Which method overrides a method in the superclass?
+ public void methodTwo(int i)
+
+b. Which method hides a method in the superclass?
+public static void methodFour(int i)
+
+c. What do the other methods do?
+Generate compile errors
+
+2. Consider the Card, Deck, and DisplayDeck classes you wrote in Questions and Exercises: Classes.
+What Object methods should each of these classes override?
+Not necessary but good to : Equals, toString, Clone, HashCode
