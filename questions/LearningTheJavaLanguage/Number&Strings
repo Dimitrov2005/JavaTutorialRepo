@@ -1,0 +1,54 @@
+1.Use the API documentation to find the answers to the following questions:
+
+    What Integer method can you use to convert an int into a string that expresses the number in hexadecimal?
+    For example, what method converts the integer 65 into the string "41"?
+    static String	toHexString(int i)
+
+    What Integer method would you use to convert a string expressed in base 5 into the equivalent int?
+     For example, how would you convert the string "230" into the integer value 65? Show the code you would use to accomplish this task.
+           Integer intbase1 = Integer.parseInt("230", 5);
+    What Double method can you use to detect whether a floating-point number has the special value Not a Number (NaN)?
+           static boolean	isNaN(double v)
+
+2. What is the value of the following expression, and why?
+    Integer.valueOf(1).equals(Long.valueOf(1))
+        value is false because Long is not an Integer
+
+
+1. What is the initial capacity of the following string builder?
+
+StringBuilder sb = new StringBuilder("Able was I ere I saw Elba.");
+sb.length + 16
+
+2. Consider the following string:
+String hannah = "Did Hannah see bees? Hannah did.";
+What is the value displayed by the expression hannah.length()?
+32, in C - 33
+
+What is the value returned by the method call hannah.charAt(12)?
+e
+Write an expression that refers to the letter b in the string referred to by hannah.
+hannah.charAt(15) - starting from 0
+
+3. How long is the string returned by the following expression? What is the string?
+
+"Was it a car or a cat I saw?".substring(9, 12)
+car
+
+In the following program, called ComputeResult, what is the value of result after each numbered line executes?
+
+public class ComputeResult {
+    public static void main(String[] args) {
+        String original = "software";
+        StringBuilder result = new StringBuilder("hi");
+        int index = original.indexOf('a');
+
+/*1*/   result.setCharAt(0, original.charAt(0));
+/*2*/   result.setCharAt(1, original.charAt(original.length()-1));
+/*3*/   result.insert(1, original.charAt(4));
+/*4*/   result.append(original.substring(1,4));
+/*5*/   result.insert(3, (original.substring(index, index+2) + " "));
+
+        System.out.println(result); -> swear oft
+    }
+}
