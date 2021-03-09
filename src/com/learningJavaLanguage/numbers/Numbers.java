@@ -2,8 +2,6 @@ package com.learningJavaLanguage.numbers;
 
 public class Numbers {
 
-
-
     public static void main(String[] args) {
         String intBase5 = "230";
         Integer intbase1 = Integer.parseInt("230", 5);
