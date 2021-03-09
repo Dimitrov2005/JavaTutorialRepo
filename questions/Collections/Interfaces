@@ -1,0 +1,16 @@
+Questions answers:
+1. Map<K,V>
+2. The good thing is that you do not have to worry about handling the specific operations by type
+3. Duplicate elements are not allowed in SET
+4. Collection<E>
+5. List represents an ordered collection with duplicate elements
+6. Queue holds elements prior to processing
+7. Map,
+8. Deque - double ended queue
+9. Ways to iterate over list's elements:
+    - Aggregate functions
+    - ForEach
+    - via Iterator
+10. Aggregate operations do not modify the underlying collection
+
+E1:
