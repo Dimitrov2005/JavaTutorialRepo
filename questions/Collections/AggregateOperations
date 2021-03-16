@@ -1,0 +1,26 @@
+1. Sequence of aggregate operations is know as a Pipeline
+2. Each pipeline contains zero or more intermediate operations
+3. Each pipeline ends with a terminal operation
+4. intermediate operation
+5. the foreach aggregate operations works on copy of collection hence it is not
+working directly on it. ( system decide how iteration takes place)
+6. Stream is not a collection
+7. im : filter, mapToInt, TM: average
+8. Lambda expression for filtering
+9. Method invocation
+10. Reduction operations
+11. Stream.reduce creates a new value, collect mutates the existing
+12. stream.collect is the preferred operation
+13. True, can be implemented
+14. using the parallelStream() invocation with parallel intermediate functions
+
+EX:
+roster
+    .stream()
+    .filter(p -> p.getGender == Person.Sex.MALE)
+    .foreach(p -> System.out.println(p.getName())
+
+List<Album> favs = new ArrayList<>();
+favs = albums.stream().filter(t -> t.tracks.rating >= 4)
+    .sorted(a -> a.name)
+    .collect(Collectors.asList())
